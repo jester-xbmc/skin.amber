@@ -810,7 +810,7 @@
       <visible>!Skin.HasSetting(Videos.Hide)</visible>
       <label>$LOCALIZE[3]</label>
       <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
-      <onclick>ActivateWindow(Videos,root)</onclick>
+      <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
     </item>
     <item id="24" description="Custom.4">
       <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
@@ -925,7 +925,7 @@
     </item>
     <item id="11" description="Quit">
       <visible>!Skin.HasSetting(Quit.Hide)</visible>
-      <label fallback="13009">$VAR[QuitLabel2]</label>
+      <label>Quit Kodi</label>
       <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
       <onclick>$VAR[QuitAction]</onclick>
     </item>

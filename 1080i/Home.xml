@@ -219,6 +219,23 @@
         </control>
       </control>
       <include>Time</include>
+	 <control type="image">
+        			<include>VisibleFadeEffect</include>
+        			<posx>0</posx>
+        			<posy>0</posy>
+        			<width>630</width>
+        			<height>90</height>
+        			<texture flipx="true" flipy="true">common/TimePanel.png</texture>
+      </control>
+      <control type="label">
+			<description>IP label</description>
+			<posx>5</posx>
+			<posy>0</posy>
+			<width>600</width>
+			<height>30</height>
+			<align>left</align>
+			<label>$INFO[Network.IPAddress,[COLOR=Grey2]IP ADDESS: [/COLOR]] PORT NO:8080</label>
+      </control>
       <control type="group">
         <include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
       </control>

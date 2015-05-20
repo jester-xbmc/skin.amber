@@ -115,24 +115,24 @@
         </control>
         <control type="fixedlist" id="300" description="Main Bar">
           <animation effect="fade" time="200" start="100" end="25" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
-          <posx>-338</posx>
+          <posx>-901</posx>
           <posy>689</posy>
           <width>3069</width>
           <height>225</height>
-          <onleft>300</onleft>
-          <onright>300</onright>
+          <onleft>100</onleft>
+          <onright>100</onright>
           <ondown>9001</ondown>
           <onup condition="Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)">700</onup>
           <pagecontrol>-</pagecontrol>
-          <focusposition>2</focusposition>
+          <focusposition>1</focusposition>
           <movement>1</movement>
           <preloaditems>4</preloaditems>
           <orientation>horizontal</orientation>
-          <itemlayout height="70" width="519">
+          <itemlayout height="70" width="929">
             <control type="label">
               <posx>0</posx>
               <posy>0</posy>
-              <width>519</width>
+              <width>929</width>
               <textcolor>Grey</textcolor>
               <shadowcolor>ShadowDark</shadowcolor>
               <height>70</height>
@@ -144,11 +144,11 @@
               <font>MainMenu</font>
             </control>
           </itemlayout>
-          <focusedlayout height="70" width="519">
+          <focusedlayout height="70" width="929">
             <control type="label">
               <posx>0</posx>
               <posy>0</posy>
-              <width>519</width>
+              <width>929</width>
               <textcolor>Highlight</textcolor>
               <shadowcolor>ShadowDark</shadowcolor>
               <height>70</height>
@@ -163,7 +163,7 @@
             <include>Home.Main.Menu.Items</include>
           </content>
         </control>
-        <control type="fixedlist" id="9001" description="Submenu Bar">
+        <control type="fixedlis" id="9001" description="Submenu Bar">
           <animation effect="slide" start="0,0" end="-128,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4) | StringCompare(Container(9001).NumItems,6)">conditional</animation>
           <animation effect="fade" time="200" start="100" end="100" reversible="true" condition="!Control.HasFocus(9001)">Conditional</animation>
           <include>VisibleFadeEffect</include>
