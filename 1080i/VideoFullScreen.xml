@@ -95,9 +95,9 @@
 				</control>
 				<control type="label" id="1">
 					<description>LiveTV Info label</description>
-					<posx>400</posx>
+					<posx>430</posx>
 					<posy>-60</posy>
-					<width>720</width>
+					<width>690</width>
 					<height>125</height>
 					<font>InfoTitle</font>
 					<label>$INFO[VideoPlayer.ChannelName]</label>
@@ -107,8 +107,9 @@
 				</control>
 				<control type="label" id="1">
 						<width min="10" max="750">auto</width>
-						<posx>400</posx>
+						<posx>430</posx>
 						<posy>40</posy>
+                        <width>690</width>
 						<height>30</height>
 						<font>MainLabelBigTitle</font>
 						<label>$INFO[Player.Title]</label>
