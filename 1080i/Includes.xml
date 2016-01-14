@@ -1076,13 +1076,13 @@
       <onclick>SendClick(8)</onclick>
     </item>
     <item id="27" description="Master mode button">
-      <visible>Container(300).HasFocus(10)</visible>
+      <visible>Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(6) | Container(300).HasFocus(10)</visible>
       <visible>System.HasLocks + System.IsMaster</visible>
       <label>$LOCALIZE[12332]</label>
       <onclick>xbmc.mastermode</onclick>
     </item>
     <item id="28" description="Master mode button">
-      <visible>Container(300).HasFocus(10)</visible>
+      <visible>Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(6) | Container(300).HasFocus(10)</visible>
       <visible>System.HasLocks + !System.IsMaster</visible>
       <label>$LOCALIZE[12333]</label>
       <onclick>xbmc.mastermode</onclick>
