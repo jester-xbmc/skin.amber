@@ -72,6 +72,14 @@
         <height>285</height>
         <include>PosterThumb</include>
       </control>
+    <control type="image">
+    <posx>175</posx>
+    <posy>273</posy>
+    <width>33</width>
+    <height>33</height>
+    <texture>$VAR[Overlay]</texture>
+    </control>
+
     </itemlayout>
     <focusedlayout height="345" width="228">
       <!--<control type="image">
@@ -97,6 +105,14 @@
         <height>285</height>
         <include>PosterThumb</include>
       </control>
+    <control type="image">
+    <posx>175</posx>
+    <posy>273</posy>
+    <width>33</width>
+    <height>33</height>
+    <texture>$VAR[Overlay]</texture>
+    </control>
+
     </focusedlayout>
   </include>
   <include name="Recommended_Posters">
@@ -127,12 +143,11 @@
         <include>PosterThumb</include>
       </control>
 	  <control type="image">
-		<visible>Control.IsVisible(312)</visible>
 		<posx>175</posx>
 		<posy>273</posy>
 		<width>33</width>
 		<height>33</height>
-		<texture>OverlayInProgress.png</texture>
+		<texture>$VAR[Overlay]</texture>
 	  </control>
     </itemlayout>
     <focusedlayout height="345" width="228">
@@ -160,12 +175,11 @@
         <include>PosterThumb</include>
       </control>
 	  <control type="image">
-		<visible>Control.IsVisible(312)</visible>
 		<posx>175</posx>
 		<posy>273</posy>
 		<width>33</width>
 		<height>33</height>
-		<texture>OverlayInProgress.png</texture>
+    <texture>$VAR[Overlay]</texture>
 	  </control>
     </focusedlayout>
   </include>
@@ -692,7 +706,15 @@
         <texture border="0,40,0,40">home/OverlayRA2T.png</texture>
       </control>
       <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
-      <include condition="System.GetBool(pvrmanager.enabled)">PVR.List</include>
+      <control type="group">
+        <include>PVR.List</include>
+        <visible>IsEmpty(Weather.Plugin) + System.GetBool(pvrmanager.enabled)</visible>
+      </control>
+      <control type="group">
+        <top>100</top>
+        <include>PVR.List</include>
+        <visible>!IsEmpty(Weather.Plugin) + System.GetBool(pvrmanager.enabled)</visible>
+      </control>
       <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Concerts.List</include>
