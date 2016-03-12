@@ -23,7 +23,7 @@
     </control>
     <control type="grouplist" id="100">
       <top>900</top>
-      <left>30</left>
+      <left>19</left>
       <height>98</height>
       <width>1305</width>
       <align>right</align>
