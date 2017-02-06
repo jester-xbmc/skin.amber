@@ -104,6 +104,10 @@ msgctxt "#31026"
 msgid "Misc options"
 msgstr "Další možnosti"
 
+msgctxt "#31029"
+msgid "Remaining"
+msgstr "Zbývající"
+
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr "Vrať všechna nastavení skinu na původní hodnoty"
@@ -274,7 +278,7 @@ msgstr "Předpověď na 10 dní"
 
 msgctxt "#31954"
 msgid "S"
-msgstr "J"
+msgstr "S"
 
 msgctxt "#31955"
 msgid "Hide"
@@ -334,7 +338,7 @@ msgstr "Stlačte pro Galerii"
 
 msgctxt "#31973"
 msgid "E"
-msgstr "V"
+msgstr "E"
 
 msgctxt "#31974"
 msgid "Home menu"
